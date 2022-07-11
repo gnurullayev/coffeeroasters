@@ -1,0 +1,336 @@
+.question {
+    padding-bottom: 168px;
+
+    &__inner {
+        width: 100%;
+        max-width: 1110px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    &__info-titles {
+        width: 255px;
+    }
+
+    &__info-title {
+        width: 1005;
+        margin-bottom: 24px;
+        padding-bottom: 24px;
+        font-family: $frounses;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        border-bottom: 1px solid #83888f40;
+    }
+
+    &__title-number {
+        display: inline-block;
+        color: #333d4b80;
+        transition: all .4s linear;
+    }
+
+    &__title-text {
+        display: inline-block;
+        margin-left: 25.5px;
+        color: #333d4b80;
+        transition: all .4s linear;
+    }
+
+    &__info-contents {
+        width: 100%;
+        max-width: 730px;
+
+        
+    }
+}
+
+.info-content {
+    margin-bottom: 32px; 
+
+    .info-content__heading {
+        position: relative;
+        width: 100%;
+        height: 48px;
+        margin-bottom: 56px;
+        font-family: 'Fraunces 9pt';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+        color: #333d4b80;
+        transition: margin-bottom .4s linear;
+    }
+
+    .info-content__heading::before {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        width: 18px;
+        height: 12px;
+        background-image: url(../../imgs/chevron-bottom.png);
+        background-size: cover;
+        content: "";
+        transition: all .4s linear;
+    }
+
+    .info-content__heading.active::before {
+        transform: rotate(180deg);
+    }
+
+    &__list {
+        max-height: 0;
+        display: flex;
+        justify-content: space-between;
+        overflow-y: hidden;
+        transition: max-height .4s linear;
+    }
+
+    &__item {
+        width: 228px;
+        height: 250px;
+        padding: 32px 28px 84px 28px;
+        background-color: #f4f1eb;
+        border-radius: 8px;
+        transition: all .4s linear;
+    }
+
+    &__item:hover {
+        background-color: #fdd6ba;
+        transition: all .4s linear;
+    }
+
+    &__item:active {
+        background-color: #0e8784;
+    }
+
+    &__item-title {
+        margin-bottom: 24px;
+        font-family: $frounses;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+}
+
+.my-plan {
+    width: 100%;
+    max-width: 730px;
+
+    &__info {
+        min-height: 208px;
+        padding: 27px 64px;
+        margin-bottom: 40px;
+        background-color: #2c343e;
+    }
+
+    &__order {
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        color: $color;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+
+    &__text {
+        font-family: $frounses;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 40px;
+        color: $color;
+
+    }
+
+    &__text--selet {
+        color: #0e8784;
+    }
+
+    &__button {
+        display: block;
+        margin-left: auto;
+    }
+}
+
+@include breackpoint-down(1100px) {
+    .question {
+        padding-bottom: 144px;
+    
+        &__inner {
+            max-width: 1100px;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        &__info-titles {
+            display: none;
+        }
+    
+        &__info-contents {
+            width: 100%;
+            max-width: 1100px;
+    
+            
+        }
+    }
+    
+    .info-content {
+        margin-bottom: 60px; 
+    
+        .info-content__heading {
+            margin-bottom: 40px;
+            font-size: 32px;
+            line-height: 48px;
+        }
+    
+        &__list {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        &__item {
+            width: 100%;
+            max-width: 250px;
+            height: 270px;
+            padding: 32px 28px 84px 28px;
+            background-color: #f4f1eb;
+            transition: all .4s linear;
+        }
+    
+        &__item:hover {
+            background-color: #fdd6ba;
+            transition: all .4s linear;
+        }
+    
+        &__item:active {
+            background-color: #0e8784;
+        }
+
+        &__item-text {
+            width: 100%;
+            max-width: 172px;
+        }
+    
+    }
+    
+    .my-plan {
+        width: 100%;
+        max-width: 1100px;
+    
+        &__info {
+            max-width: 1100px;
+            padding: 31px 44px;
+        }
+
+    }
+}
+
+@include breackpoint-down(800px) {
+    .info-content {
+    
+        &__item {
+            max-width: 223px;
+        }
+    }
+}
+
+@include breackpoint-down(720px) {
+    .info-content {
+    
+        &__item {
+            max-width: 200px;
+        }
+    }
+}
+
+@include breackpoint-down(650px) {
+    .info-content {
+    
+        &__item {
+            max-width: 175px;
+        }
+    }
+}
+
+@include breackpoint-down(576px) {
+    .question {
+        padding-bottom: 144px;
+    
+        &__inner {
+            max-width: 1100px;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        &__info-titles {
+            display: none;
+        }
+    
+        &__info-contents {
+            width: 100%;
+            max-width: 1100px;
+    
+            
+        }
+    }
+    
+    .info-content {
+        margin-bottom: 78px; 
+    
+        .info-content__heading {
+            top: 0;
+            width: 100%;
+            max-width: 100%;
+            height: 48px;
+            margin-bottom: 18px;
+            padding-right: 20px;
+            font-size: 24px;
+            line-height: 48px;
+        }
+    
+        &__list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        &__item {
+            max-width: 328px;
+            height: 100%;
+            min-height: 140px;
+            margin-bottom: 16px;
+            padding: 24px 25px;
+        }
+
+        &__item-text {
+            width: 100%;
+            max-width: 278px;
+        }
+    
+    }
+    
+    .my-plan {
+        max-width: 100%;
+        margin: 0 auto;
+    
+        &__info {
+            max-width: 1100px;
+            padding: 32px 25px;
+        }
+
+    }
+}
+
+@include breackpoint-down(380px) {
+    .info-content {
+    
+        .info-content__heading  {
+            line-height: 28px;
+        }
+
+    }
+}

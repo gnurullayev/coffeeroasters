@@ -1,0 +1,92 @@
+.about {
+    min-height: 400px;
+    padding-top: 6px;
+    padding-bottom: 144px;
+    
+    &__inner {
+        min-height: 400px;
+        padding-left: 85px;
+        padding-top: 137px;
+        background-image: url(../../imgs/about-bg-img.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+    }
+
+    &__title {
+        margin-bottom: 24px;
+        font-family: $frounses;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+        color: $color;
+    }
+
+    &__description {
+        width: 100%;
+        max-width: 445px;
+        font-size: 16px;
+        line-height: 26px;
+        color: $color;
+    }
+}
+
+@include breackpoint-down(1100px) {
+    .about {
+        
+        &__inner {
+            min-height: 400px;
+            padding-left: 58px;
+            padding-top: 118px;
+            background-image: url(../../imgs/about-bg-img-md.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+        &__title {
+            margin-bottom: 24px;
+            font-family: $frounses;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 40px;
+            color: $color;
+        }
+    
+        &__description {
+            max-width: 398px;
+            font-size: 15px;
+            line-height: 25px;
+        }
+    }
+    
+}
+
+@include breackpoint-down(576px) {
+    .about {
+        padding-top: 0px;
+        padding-bottom: 120px;
+
+        &__inner {
+            padding-left: 24px;
+            padding-right: 24px;
+            padding-top: 118px;
+            background-image: url(../../imgs/about-bg-img-sm.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+        &__title {
+            font-size: 28px;
+            line-height: 28px;
+            text-align: center;
+        }
+    
+        &__description {
+            max-width: 350px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+}

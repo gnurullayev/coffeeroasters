@@ -1,0 +1,82 @@
+.create-plan {
+    padding-bottom: 164px;
+
+    &__inner {
+        min-height: 450px;
+        padding-top: 134px;
+        padding-left: 85px;
+        background-image: url(../../imgs/creat-plain.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+    }
+
+    &__title {
+        margin-bottom: 32px;
+        font-family: $frounses;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 72px;
+        line-height: 72px;
+        color: $color;
+    }
+
+    &__desc {
+        width: 100%;
+        max-width: 445px;
+        color: $color;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+    }
+}
+
+@include breackpoint-down(1100px) {
+    .create-plan {
+        padding-bottom: 120px;
+    
+        &__inner {
+            min-height: 400px;
+            padding-top: 127px;
+            padding-left: 58px;
+            background-image: url(../../imgs/creat-plain-md.png);
+        }
+    
+        &__title {
+            margin-bottom: 24px;
+            font-size: 48px;
+            line-height: 48px;
+        }
+    
+        &__desc {
+            max-width: 398px;
+            font-size: 15px;
+            line-height: 25px;  
+        }
+    }
+}
+
+@include breackpoint-down(576px) {
+    .create-plan {
+        padding-bottom: 120px;
+    
+        &__inner {
+            min-height: 400px;
+            padding-top: 101px;
+            padding-left: 24px;
+            padding-right: 24px;
+            text-align: center;
+            background-image: url(../../imgs/creat-plain-sm.png);
+        }
+    
+        &__title {
+            margin-bottom: 22px;
+            font-size: 40px;
+            line-height: 40px;
+        }
+    
+        &__desc {
+            max-width: 300px;
+            margin: 0 auto; 
+        }
+    }
+}

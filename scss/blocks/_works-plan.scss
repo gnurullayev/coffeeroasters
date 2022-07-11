@@ -1,0 +1,421 @@
+.works-plan {
+    padding-bottom: 159px;
+
+    &__info {
+        min-height: 653px;
+        padding-top: 115px;
+        background-color: #2c343e;
+        border-radius: 10px;
+    }
+
+    &__inner {
+        width: 100%;
+        max-width: 1110px;
+        margin: 0 auto;
+    }
+
+    &__list {
+        width: 100%;
+        max-width: 1110px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 64px;
+    }
+
+    &__item {
+        width: 100%;
+        max-width: 285px;
+    }
+
+    &__item + &__item {
+        margin-left: 95px;
+    }
+
+    &__direction {
+        width: 100%;
+        max-width: 760px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    &__oval {
+        position: relative;
+        width: 29px;
+        height: 29px;
+        display: block;
+        margin-bottom: 67px;
+        border-radius: 50%;
+        background-color: #2c343e;
+        border: 2px solid #0E8784;
+    }
+
+    .oval1::before,
+    .oval2::before {
+        position: absolute;
+        top: 50%;
+        right: -402px;
+        width: 400px;
+        height: 2px;
+        display: block;
+        background-color: #fdd6ba;
+        content: "";
+    }
+    
+    .work {
+
+        &__number {
+            display: inline-block;
+            margin-bottom: 38px;
+            font-family: $frounses;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 72px;
+            line-height: 72px;
+            color: #FDD6BA;
+        }
+
+        &__title {
+            width:  255px;
+            margin-bottom: 42px;
+            font-family: $frounses;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 36px;
+            color: $color;
+        }
+
+        &__desc {
+            font-size: 16px;
+            line-height: 26px;
+            color: $color;
+        }
+    }
+
+}
+
+@include breackpoint-down(1125px) {
+    .works-plan {
+    
+        .oval1::before,
+        .oval2::before {
+            right: -374px;
+            width: 372px;
+        }
+    }
+}
+
+@include breackpoint-down(1100px) {
+    .works-plan {
+        padding-bottom: 0;
+        margin-bottom: 144px;
+        background-color: #2c343e;
+        border-radius: 10px;
+
+        &__inner {
+            max-width: 100%;
+            padding: 0;
+        }
+    
+        &__title{
+            margin-bottom: 40px;
+        }
+    
+        &__list {
+            max-width: 100%;
+            margin-bottom: 44px;
+        }
+    
+        &__item {
+            max-width: 223px;
+        }
+    
+        &__item + &__item {
+            margin-left: 10px;
+        }
+
+        &__oval {
+            margin-bottom: 48px;
+        }
+    
+        .oval1::before,
+        .oval2::before {
+            right: -391px;
+            width: 389px;
+        }
+        
+        .work {
+
+            &__title {
+                width:  223px;
+                margin-bottom: 38px;
+                font-size: 28px;
+                line-height: 32px;
+            }
+    
+            &__desc {
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+    
+    }
+}
+
+@include breackpoint-down(1043px) {
+    .works-plan {
+    
+        .oval1::before,
+        .oval2::before {
+            right: -362px;
+            width: 360px;
+        }
+    }
+}
+
+@include breackpoint-down(985px) {
+    .works-plan {
+    
+        .oval1::before,
+        .oval2::before {
+            right: -334px;
+            width: 332px;
+        }
+    }
+}
+
+@include breackpoint-down(929px) {
+    .works-plan {
+    
+        .oval1::before,
+        .oval2::before {
+            right: -305px;
+            width: 303px;
+        }
+    }
+}
+
+@include breackpoint-down(871px) {
+    .works-plan {
+    
+        .oval1::before,
+        .oval2::before {
+            right: -276px;
+            width: 274px;
+        }
+    }
+}
+
+@include breackpoint-down(813px) {
+    .works-plan {
+    
+        .oval1::before,
+        .oval2::before {
+            right: -247px;
+            width: 245px;
+        }
+    }
+}
+
+@include breackpoint-down(755px) {
+    .works-plan {
+    
+        .oval1::before,
+        .oval2::before {
+            right: -218px;
+            width: 216px;
+        }
+    }
+}
+
+
+@include breackpoint-down(730px) {
+    .works-plan {
+
+        &__inner {
+            max-width: 689px;
+            padding: 0;
+        }
+    
+        &__title{
+            margin-bottom: 40px;
+        }
+    
+        &__list {
+            max-width: 600px;
+            margin-bottom: 44px;
+        }
+    
+        &__item {
+            max-width: 190px;
+            height: auto;
+        }
+    
+        &__item + &__item {
+            margin-left: 10px;
+        }
+
+        &__oval {
+            margin-bottom: 48px;
+        }
+    
+        .oval1::before,
+        .oval2::before {
+            right: -189px;
+            width: 187px;
+        }
+        
+        .work {
+
+            &__title {
+                width:  223px;
+                margin-bottom: 38px;
+                font-size: 28px;
+                line-height: 32px;
+            }
+    
+            &__desc {
+                max-width: 190px;
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+    
+    }
+}
+
+@include breackpoint-down(650px) {
+    .works-plan {
+
+        &__list {
+          justify-content: space-between;
+        }
+    
+        &__item {
+            max-width: 155px;
+            height: auto;
+        }
+    
+        &__item + &__item {
+            margin-left: 10px;
+        }
+
+        &__oval {
+            margin-bottom: 30px;
+        }
+    
+        .oval1::before,
+        .oval2::before {
+            right: -194.5px;
+            width: 192.5px;
+            display: inline-block;
+        }
+        
+        .work {
+
+            &__number {               
+                margin-bottom: 20px;
+                font-size: 55px;
+                line-height: 55px;
+            }
+            &__title {
+                width:  155px;
+                margin-bottom: 25px;
+                font-size: 26px;
+                line-height: 26px;
+            }
+    
+            &__desc {
+                width: 100%;
+                max-width: 190px;
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    
+    }
+}
+
+@include breackpoint-down(590px) {
+    .works-plan {
+
+        .oval1::before,
+        .oval2::before {
+            right: -175px;
+            width: 173px;
+            display: inline-block;
+        }
+    
+    }
+}
+
+@include breackpoint-down(576px) {
+    .works-plan {
+        padding-bottom: 0px;
+        margin-bottom: 120px;
+         
+        &__inner {
+            max-width: 420px;
+            padding: 0;
+            margin: 0 auto;
+        }
+    
+        &__title{
+            width: 100%;
+            max-width: 327px;
+            margin: 0 auto;
+            margin-bottom: 80px;
+            text-align: center;
+        }
+    
+        &__list {
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            margin-bottom: 79px;
+            text-align: center;
+        }
+        
+        &__item + &__item {
+            margin-left: 0;
+        }
+
+        &__item {
+            width: 100%;
+            max-width: 327px;
+            margin-bottom: 56px;
+        }
+    
+
+        &__oval {
+            display: none;
+        }
+        
+        .work {
+
+            &__number {
+                display: inline-block;
+                margin: 0 auto;
+                margin-bottom: 24px;
+            }
+
+            &__title {
+                width:  100%;
+                margin-bottom: 24px;
+            }
+    
+            &__desc {
+                width: 100%;
+                max-width: 400px;
+                margin: 0 auto;
+                font-size: 15px;
+                line-height: 25px;
+                text-align: center;
+            }
+        }
+    
+    }
+}

@@ -1,0 +1,178 @@
+.collection {
+
+    & {
+        padding-bottom: 188px;
+    }
+
+    &__inner {
+        width: 100%;
+        max-width: 1111px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        width: 100%;
+        min-height: 196px;
+        padding-top: 86px;
+        font-family: $frounses;
+        font-weight: 900;
+        font-size: 150px;
+        line-height: 72px;     
+        color: #83888f; 
+        text-align: center;
+        background: linear-gradient(180deg, rgba(254, 252, 247, 0.1) 0%, #FEFCF7 100%);
+    }
+
+    &__list {
+        position: relative;
+        top: -70px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 255px;
+        text-align: center;
+    }
+
+    .coffee {
+
+        &__brend {
+            margin-bottom: 71px;
+        }
+
+        &__name {
+            margin-bottom: 24px;
+            font-family: 'Fraunces 9pt';
+            font-weight: 900;
+            color: #333D4B;
+        }
+    }
+
+}
+
+
+@include breackpoint-down(1100px) {
+    .collection {
+
+        & {
+            padding-bottom: 188px;
+        }
+    
+        &__inner {
+            width: 100%;
+            max-width: 1111px;
+            margin: 0 auto;
+        }
+    
+        &__title {
+            max-width: 689px;
+            min-height: 118px;
+            margin: 0 auto;
+            padding-top: 27px;
+            font-size: 89px;
+        }
+    
+        &__list {
+            top: -59px;
+            display: block;
+            justify-content: space-between;
+        }
+    
+        &__item {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 573px;
+            margin: 0 auto;
+            text-align: left;
+        }       
+    }
+
+    .coffee {
+        &__list {
+            margin-top: 56px;
+        }
+
+        &__brend {
+            margin-bottom:01px;
+
+        }
+
+        &__name {
+            margin-bottom: 0px;
+            font-family: 'Fraunces 9pt';
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 32px;
+            text-align: left;
+            color: #333D4B;
+        }
+
+        &__desc {
+            font-size: 15px;
+            line-height: 25px;
+            text-align: left;
+        }
+    }
+}
+
+@include breackpoint-down(576px) {
+    .collection {
+
+        &__inner {
+           padding-top: 120px;
+        }
+
+        & {
+            padding-bottom: 120px;
+        }
+    
+        &__title {
+            max-width: 286px;
+            min-height: 72px;
+            margin: 0 auto;
+            margin-bottom: 13px;
+            padding-top: 0px;
+            font-size: 40px;
+        }
+    
+        &__list {
+            top: 0px;
+            display: block;
+            justify-content: space-between;
+        }
+    
+        &__item {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+        }  
+        .coffee__brend {
+            width: 200px;
+            height: 151px;
+        }     
+    }
+
+    .coffee {
+        &__list {
+            margin-top: 0px;
+        }
+
+        &__brend {
+            margin-bottom:01px;
+
+        }
+
+        &__name {
+            margin-bottom: 0px;
+            text-align: center;
+        }
+
+        &__desc {
+            text-align: center;
+        }
+    }
+}

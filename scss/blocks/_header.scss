@@ -1,0 +1,119 @@
+.header {
+    min-height: 113px;
+
+    &__inner {
+        min-height: 113px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+.nav {
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        transition: all .4s linear;
+    }
+
+    &__item + &__item {
+        margin-left: 33px;
+    }
+
+    &__link {
+        font-family: 'Barlow', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.923077px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $color-link; 
+        transition: all .4s linear;
+    }
+
+    &__link:hover {
+       
+        color: $color-link;
+        transition: all .4s linear;
+    }
+
+    &__link:active {
+        background: $color;
+        border: 1px solid #000000;
+        box-shadow: 0px 1px 2px #000000;
+    }
+}
+
+.menu-btn {
+    display: none;
+    background-color: transparent;
+    border: none;
+    margin-top: 5px;
+}
+
+@include breackpoint-down (580px){
+    .nav {
+
+
+        &__list {
+            position: absolute;
+            top: 89px;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            display: block;
+            padding-top: 40px;
+            text-align: center;
+            background: linear-gradient(180deg, #FEFCF7 55.94%,  rgba(254, 252, 247, 0.504981) 0%);
+            transition: all .4s linear;
+        }
+
+        &__item {
+            margin-bottom: 32px;
+            transition: all .4s linear;
+        }
+
+        &__item + &__item {
+            margin-left: 0px;
+        }
+    
+        &__link {
+            font-size: 24px;
+            line-height: 32px;
+            color: $color-black; 
+            transition: all .4s linear;
+        }
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .menu-oppen {
+        display: block;
+    }
+
+    .menu-clouse {
+        display: none;
+    }
+}
+
+@include breackpoint-down (576px) {
+    .header {
+        min-height: 90px;
+    
+        &__inner {
+            min-height: 90px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
